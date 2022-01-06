@@ -1,0 +1,13 @@
+.spotlight {
+    display: flex;
+    flex-flow: row nowrap;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    /* max-height: 255px; */
+    margin: 2rem auto;
+    padding-bottom: 1rem;
+}
+#searchResults {
+    display: none;
+}
+

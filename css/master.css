@@ -1,0 +1,71 @@
+/* colours 
+Black - #020202 
+Pink - #DEA2BC
+Nude - #DEDCAD
+Light Pink Purple - #D297DE
+Green - #66E06A
+
+ */
+body {
+    background-color: #020202;
+    color: #dedcad;
+    /* height: -webkit-fill-available; */
+}
+/* Scroll bar GLOBAl*/
+::-webkit-scrollbar {
+    width: 0.5rem;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #020202;
+    border: 1px solid #fafafa2a;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #66e06aad;
+}
+
+.navbar-brand {
+    text-transform: capitalize;
+    letter-spacing: 2px;
+    align-items: center;
+    color: #66e06a;
+}
+.navbar-nav {
+    align-items: center;
+}
+.navbar-nav > a,
+.navbar-toggler {
+    color: #dedcad;
+}
+.nav-link:hover,
+.navbar-toggler:hover {
+    color: #66e06a;
+}
+.nav-link.active {
+    color: #dea2bc;
+}
+.navbar-expand-lg {
+    justify-content: stretch;
+}
+
+.legend {
+    display: flex;
+    position: relative;
+    flex-flow: column nowrap;
+    overflow: hidden;
+    background: radial-gradient(circle, rgba(222, 220, 173, 0.1) 2%, rgba(2, 2, 2, 1) 40%, rgba(2, 2, 2, 1) 100%);
+}
+
+.legend > article > img {
+    transform: translateX(10rem);
+}
+
+.coverScreen {
+    height: 100vh;
+}

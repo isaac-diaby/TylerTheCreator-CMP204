@@ -1,0 +1,14 @@
+.card {
+    max-width: 60vw;
+    background-color: #02020277;
+}
+.legend {
+    display: flex;
+    /* justify-items: center; */
+    justify-content: center;
+    align-items: center;
+}
+
+.fields > label {
+    flex-basis: 100px;
+}

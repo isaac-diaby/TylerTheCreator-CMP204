@@ -1,0 +1,18 @@
+.coverScreen {
+    display: flex;
+    justify-content: center;
+}
+#mainCard {
+    max-height: 74vh;
+}
+
+ul.list-group {
+    height: 200px;
+    overflow: scroll;
+}
+.list-group-item > .row > p {
+    margin: 0;
+}
+.row > a:hover {
+    color: red;
+}

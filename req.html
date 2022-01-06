@@ -1,0 +1,121 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Requirements page</title>
+  <link rel="stylesheet" href="./css/reqStyle.css">
+</head>
+
+<body>
+
+  <h1>CMP204 Requirements Page - Unit 2 Assessment</h1>
+
+  <p>If you have not met a requirement, do not delete it from the table.</p>
+
+  <table>
+    <thead>
+      <tr>
+        <th class="reqCol">Requirement</th>
+        <th class="metCol">How did you meet this requirement?</th>
+        <th class="fileCol">File name(s), line no.</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr>
+        <td>HTML, CSS, JavaScript has been contained within separate files.</td>
+        <td>I have separated my components into files and folders. The main pages are located at the root directory. My
+          JavaScript and CSS are located in their folders too called "js" and "css" respectively. The components folder
+          have some template files that I use to inject into the main page files. Lastly, PHP requests endpoints are in
+          the "api" folder. </td>
+        <td>folders: js, css, components and api</td>
+      </tr>
+
+      <tr>
+        <td>A clear use of HTML5.</td>
+        <td>I used HTML5 throughout the application so I included the "!doctype html" on all of the root pages. This
+          allows me to take advantage of HTML5 features such as asynchronous JS, cookies, DOM manipulation and much
+          more.</td>
+        <td>All root pages</td>
+      </tr>
+      <tr>
+        <td>Use of the Bootstrap framework providing a responsive layout.</td>
+        <td>With the help of Bootstrap, I made my application responsive for various device sizes. I mostly tested my
+          layouts using safari as it was the most accessible for me.</td>
+        <td> All root pages</td>
+      </tr>
+      <tr>
+        <td>Use of JavaScript to manipulate the DOM based on an event.</td>
+        <td>I didn't make full use of pure JavaScript to manipulate the DOM (mostly Query), however, I used it to set a
+          cookie that checks if the user has seen the cookie policy pop up on the first visit. If it's the user's first
+          visit the application will show a delayed popup about the sites T&c.</td>
+        <td>index.js (6)</td>
+      </tr>
+      <tr>
+        <td>Use of jQuery in conjunction with the DOM.</td>
+        <td>I used Jquery to manipulate the DOM in several ways. eg. when liking a song, handling errors and searching.
+        </td>
+        <td>search.js (12, 33), index.js (20) </td>
+      </tr>
+      <tr>
+        <td>Use of AJAX (pure JavaScript i.e. without the use of a library).</td>
+        <td>I used a pure JavaScript ajax request for the "create new account" function. This function sends a post
+          request to the "createaccount.php" endpoint in the api directory to create the users account without needing
+          to reload the page.</td>
+        <td>auth.js (17), createaccount.php</td>
+      </tr>
+      <tr>
+        <td>Use of the jQuery AJAX function.</td>
+        <td>I used a Jquery Ajax request to load data from the server to the client. eg. getting all the songs from the
+          database, getting the songs that the user liked and updating the users liked songs.</td>
+        <td>seach.js (9, 30)</td>
+      </tr>
+      <tr>
+        <td>User login functionality (PHP/MySQL).</td>
+        <td>You can create an account and authenticate the client. The data is saved in the SQL database.</td>
+        <td>login.php, auth.js (3), createaccount.php </td>
+      </tr>
+      <tr>
+        <td>Ability to select (SELECT), add (INSERT), edit (UPDATE) and delete (DELETE) information from a database
+          (PHP/MySQL).</td>
+        <td>I implemented CRUD operation, creating a new user, deleting a user account, updating each song likes
+          counter, searching for songs and songs that the user liked.</td>
+        <td>createaccount.php, deleteaccount.php, search.php, login.php, toggleLike.php, profile.php, songs.php</td>
+      </tr>
+      <tr>
+        <td>Consideration of GDPR and the Cookie Law.</td>
+        <td>I've added a privacy policy page and implemented a cookies usage pop for first-time visitors.</td>
+        <td>privacypolicy.php, cookietoast.html, index.js (4)</td>
+      </tr>
+      <tr>
+        <td>SQL queries written as prepared statements.</td>
+        <td>I mostly used prepared statements throughout my application, especially request that involved user input.
+          ill list where I used them.</td>
+        <td>login.php (27), toggleLike.php (17, 19, 27, 29, 51, 54), search.php (12), deleteaccount.php (6),
+          createaccount.php (37)</td>
+      </tr>
+      <tr>
+        <td>Passwords should be salted and hashed.</td>
+        <td>I hashed users passwords with BCRYPT before adding the password to the database. PHP's password_hash
+          function also automatically hashes the given password before hashing the password so I took advantage of that
+          by adding the cost of 10, this is an option on the password_hash function.</td>
+        <td>createaccount.php (30), login.php (35)</td>
+      </tr>
+      <tr>
+        <td>User input is sanitised.</td>
+        <td>I made functions that were used on every user input to sanitise the user's input on both the client and
+          server. in addition to escaping malicious inputs, I also used prepared statements with all user-provided data
+          when executing SQL commands</td>
+        <td>auth.js (54, 69), index.js (42), conn.php (53)</td>
+      </tr>
+    </tbody>
+
+
+
+  </table>
+
+</body>
+
+</html>

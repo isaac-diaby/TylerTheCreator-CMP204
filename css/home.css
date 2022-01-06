@@ -1,0 +1,40 @@
+.legend > .headline {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-flow: column;
+    margin: 3rem 0;
+    align-items: center;
+}
+.legend > .headline > p {
+    text-align: center;
+}
+
+@media (min-width: 576px) {
+    .legend > .headline {
+        display: block;
+        max-width: 50%;
+        position: absolute;
+        overflow: auto;
+    }
+    .legend > .headline > p {
+        text-align: left;
+    }
+}
+
+.steps {
+    align-items: stretch;
+    justify-content: space-evenly;
+    grid-row-gap: 2em;
+}
+
+.step > div.card {
+    height: 100%;
+}
+.step > div.card.card > div.card-body a {
+    display: none;
+    width: -webkit-fill-available;
+}
+.step:hover > div.card.card > div.card-body a {
+    display: block;
+}

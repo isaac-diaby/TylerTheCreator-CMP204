@@ -1,0 +1,28 @@
+.spotlight > .card {
+    min-width: 15rem;
+}
+
+.playbtn {
+    font-size: 1.3rem;
+}
+
+.likebtn:not(.liked):hover,
+.playbtn:hover {
+    color: red;
+    /* font-size: 1.4rem; */
+}
+.liked {
+    color: red;
+}
+.liked:hover {
+    color: black;
+}
+
+.card:hover > .card-body .actions {
+    display: flex;
+}
+.actions {
+    display: none;
+    justify-content: space-around;
+    align-items: baseline;
+}
