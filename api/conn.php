@@ -2,9 +2,9 @@
 
 // DATABASE Creds
 define('DB_HOST', 'Lochnagar.abertay.ac.uk');
-define('DB_USERNAME', 'sql2001890');
+define('DB_USERNAME', '********');
 define('DB_PASSWORD', '********');
-define('DB_NAME', 'sql2001890');
+define('DB_NAME', 's********');
 
 $conn = mysqli_connect(DB_HOST, DB_USERNAME, DB_PASSWORD, DB_NAME);
 
